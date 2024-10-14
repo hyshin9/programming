@@ -6,22 +6,25 @@
 int main(int argc, char *argv[]) {
 	
 	int answer=39;
-	int i;
-	int t;   //trials
+	int i;   //scanf
+	int t=0;   //trials
 	
 	do
 	{
 		printf("Guess a number: ");
 		scanf("%i", &i);
-	while(i!=answer)
-	{
-		if(i<answer)
-			printf("Low!");
-		else
-			printf("High!");
+			if(i<answer){
+				printf("Low!\n");
+				++t;}
+			else if(i>answer){
+				printf("High!\n");
+				++t;}
+			else{
+				++t;
+				printf("Congratulation! Trials: %i",t);
+			}
 	}
-	}
-	printf("Congratulation!");	
+	while(i!=answer);
 		
 	return 0;
 }
