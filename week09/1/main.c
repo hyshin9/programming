@@ -6,7 +6,7 @@
 int main(void) {
 	
 	int flag = 1;
-	int y;
+	int y; // y:global variable
 	while(flag!=0)
 	{
 		// int y; (x) y:local variable
@@ -14,5 +14,4 @@ int main(void) {
 		flag=0;
 	}
 	y=4;
-	return 0;
 }
