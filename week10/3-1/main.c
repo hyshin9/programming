@@ -17,7 +17,7 @@ int main(void)
 		score[i]=grade[i];
 		
 	for(i=0; i<SIZE; i++)
-		printf("scoore[%d]=%d\n", i, score[i]);
+		printf("score[%d]=%d\n", i, score[i]);
 	
 	return 0;
 }
