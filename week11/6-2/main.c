@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main(void) { //one char
+void main(void) { //one word
 	
 	FILE *fp=NULL;
-	char c;
+	char str[100];
 	fp=fopen("C:\\sample.txt","r");
 	if(fp==NULL)
 		printf("파일을 못 열음\n");
-	while((c=fgetc(fp))!=EOF)
-		putchar(c);
+	while(fgets(str, 20, fp)!=NULL)
+		printf("%s", str);
 		
 	fclose(fp);
 	
