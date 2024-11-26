@@ -6,12 +6,17 @@ int main(void) {
 	int grade[5];
 	
 	for (i=0; i<5; i++){
-		printf("Input value-grade[%i] = ", i);
+		printf("Input value - grade[%i] = ", i);
 		scanf("%d", &grade[i]);
 	}
 	
 	int *pi=grade;
-	printf("grade[0] = %d\n", *pi);
+	int sum;
+	for (i=0; i<5; i++){
+		printf("grade[%d] = %d\n", i, pi[i]);
+	}
+	sum=*pi++;
+	printf("average: %i", sum);
 	
 	return 0;
 }
