@@ -10,13 +10,14 @@ int main(void) {
 		scanf("%d", &grade[i]);
 	}
 	
-	int *pi=grade;
-	int sum;
+	int *ptr=grade;
+	int sum=0;
 	for (i=0; i<5; i++){
-		printf("grade[%d] = %d\n", i, pi[i]);
+		printf("grade[%d] = %d\n", i, ptr[i]);
+		sum += ptr[i];
 	}
-	sum=*pi++;
-	printf("average: %i", sum);
+	
+	printf("average: %i", sum/5);
 	
 	return 0;
 }
