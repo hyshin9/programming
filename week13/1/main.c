@@ -8,19 +8,18 @@ struct student {
 };
 
 int main(void) {
-	struct student s={24, "s", 4.1};	
+	struct student s1={24, "name", 4.2};	
 	
 	printf("Input the ID: ");
-	scanf("%d", &s.ID);
+	scanf("%d", &s1.ID);
 	
 	printf("Input the name: ");
-	scanf("%s", &s.name);
+	scanf("%s", s1.name);
 	
 	printf("Input the grade: ");
-	scanf("%f", &s.grade);
+	scanf("%lf", &s1.grade);
 	
-	printf("ID: %d\n", s.ID);
-	printf("name: %s\n", s.name);
-	printf("grade: %f\n", s.grade);
-	
+	printf("ID: %d\n", s1.ID);
+	printf("name: %s\n", s1.name);
+	printf("grade: %lf\n", s1.grade);
 }
