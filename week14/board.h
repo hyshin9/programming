@@ -17,11 +17,11 @@
 #define BOARDSTATUS_NOK          1
 #define BOARDSTATUS_OK           0
 
-int board_initBoard(void);
-int board_getBoardStatus(int pos);
-int board_getShartPosition(void);
-int board_stepShark(void);
-int board_getBoardCoin(int pos);
-void board_printBoardStatus(void);
+int board_initBoard(void); //보드초기화 
+int board_getBoardStatus(int pos); //특정 칸의 파손 여부 출력 
+int board_getSharkPosition(void); // 상어의 위치 출력
+int board_stepShark(void); //상어 전진 명령  
+int board_getBoardCoin(int pos); //Coin 습득 명령 
+void board_printBoardStatus(void); //전체보드의 상태출력 
 // ----- EX. 3 : board ------------
 #endif /* board_h */
